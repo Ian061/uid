@@ -1,3 +1,8 @@
+:root {
+    --accent-color: #436328;
+    font-size: 16pt;
+}
+
 .header-class {
     font-size: x-large;
     font-family: Comfortaa, sans-serif
@@ -10,37 +15,24 @@
     padding: 0;
     margin: 0;
     font-family: Chonburi, sans-serif
-}
-.title {
-    font-family: Chonburi, sans-serif;
-    font-weight: 700;
-}
 
-.headers {
-    font-family: Chonburi, sans-serif;
-    font-weight: 400;
-}
-
-.subheaders {
-    font-family: Chonburi, sans-serif;
-    font-weight: 400;
-}
-
-.subtitle {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 300;
-}
-
-.h3-row {
-    display: flex;
-    gap : 40px;
-    justify-content: center;
 }
 
 .center-text{
     text-align: center;
 }
 
+.hero{
+    background-color: var(--accent-color);
+    height: 15rem;
+}
+
+.highlights{
+    background-color: var(--accent-color);
+    font-size: 16pt;
+    width: 35rem
+    
+}
 
 
 

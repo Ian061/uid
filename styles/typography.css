@@ -1,0 +1,36 @@
+.title {
+    font-family: Chonburi, sans-serif;
+    font-weight: 700;
+}
+
+.headers {
+    font-family: Chonburi, sans-serif;
+    font-weight: 400;
+}
+
+.subheaders {
+    font-family: Chonburi, sans-serif;
+    font-weight: 400;
+
+}
+
+.subtitle {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 300;
+}
+
+.h3-row {
+    display: flex;
+    gap : 40px;
+    justify-content: center;
+}
+
+.font-white{
+    color: #FFFFFF;
+}
+
+.font-brown{
+    color: #9C614B
+}
+
+
