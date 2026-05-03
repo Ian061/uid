@@ -21,8 +21,24 @@
 
 .h3-row {
     display: flex;
-    gap : 40px;
+    gap : 20px;
     justify-content: center;
+    
+}
+
+.h3-row h3 {
+    background-color: var(--accent-color);
+    
+
+    width: 200px;
+    height: 80px;
+
+    padding: 15px, 25px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .font-white{
@@ -32,5 +48,28 @@
 .font-brown{
     color: #9C614B
 }
+
+.button {
+    display: flex;
+    gap : 20px;
+    justify-content: center;
+    
+}
+
+.button {
+    background-color: var(--accent-color);
+    
+    width: 250px;
+    height: 80px;
+
+    padding: 15px 25px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
 
 

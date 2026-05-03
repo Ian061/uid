@@ -10,12 +10,11 @@
 
 .navigationbar ul {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     list-style: none;
     padding: 0;
     justify-content: center;
-    font-family: Chonburi, sans-serif
-
+    font-family: Chonburi, sans-serif;
 }
 
 .center-text{
@@ -62,14 +61,12 @@
     width: 30%;
 }
 
-
-
 .highlights{
     background-color: var(--accent-color);
-    font-size: 16pt;
+    font-size: 10pt;
 
-    width: 90%;
-    max-width: 35rem;
+    width: 100%;
+    max-width: 40rem;
 
     margin: 0 auto;
     padding: 10px;
@@ -92,26 +89,27 @@ html, body {
 }
 
 @media (max-width: 768px){
-    .hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    background-color: var(--accent-color);
-
-    width: 100%;
-    max-width: 100;
-    height: 300px;
-    max-height: 300px;
-    padding: 0  20px;
-    box-sizing: border-box;
-
-    position: relative;
-    overflow: hidden;
-}
-    .hero img{
-        width: 100%;
+    .hero {
+        justify-content: center;
     }
+
+    .left-img,
+    .right-img {
+        display: none;
+    }
+
+    .center-img{
+        display: block;
+        width: 80%;
+    }
+
+    .navigationbar ul{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+
+    }
+
 }
 
 .top-bar{
@@ -126,6 +124,7 @@ html, body {
     color: white;
     border: none;
     cursor: pointer;
+    
 }
 
 
