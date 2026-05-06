@@ -21,6 +21,10 @@
     text-align: center;
 }
 
+.right-end-text{
+    text-align: end;
+}
+
 .hero{
     display: flex;
     justify-content: space-between;
@@ -29,12 +33,9 @@
     background-color: var(--accent-color);
 
     width: 100%;
-    max-width: 100;
+    max-width: 1000rem;
     height: 300px;
     max-height: 300px;
-    padding: 0  20px;
-    box-sizing: border-box;
-
     position: relative;
     overflow: hidden;
 }
@@ -59,14 +60,20 @@
     left: 50%;
     transform: translateX(-50%);
     width: 30%;
+    display:block;
 }
 
 .top-image{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.top-image img {
     width : 100%;
     height : 100%;
     object-fit: cover;
-    object-position: 50% 70%;
-    
+    object-position: 50% 75%;
+    display:block;
 }
 
 .highlights{
@@ -76,49 +83,25 @@
     width: 100%;
     max-width: 40rem;
 
-    margin: 0 auto;
+    margin: auto;
     padding: 10px;
-    box-sizing: border-box;
-    
 }
 
 .overlay-text {
     position: absolute;
-    top: 50;
-    left: 50;
-    transform: translate(-20%, 350%);
+    bottom: 15%;
+    left: 37%;
+    transform: none;
+    
+    color: white;
+    font-size: 20px;
+    text-align: flex-start;
 
 }
 
-html, body {
-    margin:0;
-    padding: 0;
-    overflow-x: hidden;
-}
 
-@media (max-width: 768px){
-    .hero {
-        justify-content: center;
-    }
 
-    .left-img,
-    .right-img {
-        display: none;
-    }
 
-    .center-img{
-        display: block;
-        width: 80%;
-    }
-
-    .navigationbar ul{
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-
-    }
-
-}
 
 .top-bar{
     display: flex;
@@ -146,11 +129,11 @@ html, body {
     background-color: var(--accent-color);
      
     width: 200px;
-    height: 80px;
+    height: 100px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     border-radius: 10px;
     text-decoration: none;
@@ -161,8 +144,32 @@ html, body {
     margin-top: 40px;
 }
 
-.wrap-image{
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
+
+
+.cart-space{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:100px; 
 }
+
+body {
+    margin: 0 ;
+}
+
+
+
+.top-left-button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+}
+.top-left-button img{
+    width : 100%;
+    border-radius: 10px;
+    height: auto;
+    cursor: pointer;
+}
+
+
