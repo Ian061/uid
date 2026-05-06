@@ -3,11 +3,6 @@
     font-size: 16pt;
 }
 
-.header-class {
-    font-size: x-large;
-    font-family: Comfortaa, sans-serif
-}
-
 .navigationbar ul {
     display: flex;
     gap: 30px;
@@ -72,19 +67,35 @@
     width : 100%;
     height : 100%;
     object-fit: cover;
-    object-position: 50% 75%;
+    object-position:50% 75%;
+    display:block;
+}
+
+.top-image-philly{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.top-image-philly img {
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+    object-position: 50%;
     display:block;
 }
 
 .highlights{
+    display: flex;
+    flex-direction: column;
     background-color: var(--accent-color);
     font-size: 10pt;
-
     width: 100%;
     max-width: 40rem;
-
     margin: auto;
-    padding: 10px;
+    padding: 30px;
+    gap:20px;
+
+
 }
 
 .overlay-text {
@@ -98,10 +109,6 @@
     text-align: flex-start;
 
 }
-
-
-
-
 
 .top-bar{
     display: flex;
@@ -157,8 +164,6 @@ body {
     margin: 0 ;
 }
 
-
-
 .top-left-button{
     position: absolute;
     top: 20px;
@@ -172,4 +177,15 @@ body {
     cursor: pointer;
 }
 
+
+.featured-item-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.featured-item-container img{
+    width: 150px;
+    border-radius: 10px;
+}
 

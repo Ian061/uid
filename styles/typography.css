@@ -11,13 +11,21 @@
 .subheaders {
     font-family: Chonburi, sans-serif;
     font-weight: 400;
+    font-size: 20pt;
 
 }
 
 .subtitle {
     font-family: "Comfortaa", sans-serif;
     font-weight: 300;
+    font-size: 14pt;
 }
+
+.header-class {
+    font-size: x-large;
+    font-family: Comfortaa, sans-serif
+}
+
 
 .h3-row {
     display: flex;
