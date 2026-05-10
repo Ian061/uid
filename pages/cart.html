@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/typography.css">
     <link rel="stylesheet" href="../styles/colors.css">
-    <script src="script.js"></script>
+    <script src="../script/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -21,6 +21,7 @@
 
 <div>
     <section class = "cart-space">
+
         <h1 class="line"></h1>  
         <div id = "empty-cart-message">
             <h2 class="subheaders font-brown">Your cart is empty!</h2>
@@ -28,13 +29,20 @@
                 Add items
             </a>
         </div>
+
         
         
-<section class = "added-items">
-    <ul id ="cart-items"></ul>
+    <section class = "added-items" id = "cart-section">
+        <ul id ="cart-items"></ul>
+        <a href="menu.html" class = "button headers font-white">
+            Add items
+        </a>
     </section>
-<h1 class = "line"></h1>
-</section>
+
+
+    <h1 class = "line"></h1>
+
+    </section>
 
 <h2 class=" subheaders font-brown right-end">
     Subtotal: $<span id = "subtotal">0</span>
@@ -46,7 +54,6 @@
     </a>
 </section>
 </div>
-
 
 
 <script src = "../script/script.js"></script>
