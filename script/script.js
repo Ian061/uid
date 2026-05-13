@@ -30,7 +30,7 @@ function displayCart(){
         cartSection.style.display = "none";
     } else {
         emptyMessage.style.display = "none";
-        cartSection.style.display = "block center-text";
+        cartSection.style.display = "block ";
     }
 
     cart.forEach((item, index) => {
@@ -72,7 +72,7 @@ function removeItem(index){
 
 }
 
-document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", ()=> {
     
     const checkoutBtn = document.getElementById("checkoutBtn");
     const cartSection = document.getElementById("cart-section");
@@ -89,16 +89,16 @@ document.addEventListener("DOMContentLoaded", ()=>{
         if (!onCheckoutPage){
             cartSection.style.display = "none";
             checkoutForm.style.display = "block";
-            pageTitle.style.display = "none";
-            yourTitle.style.display = "block";
+            pageTitle.style.display = "block";
+            yourTitle.style.display = "none";
 
             checkoutBtn.textContent = "Go Back";
             onCheckoutPage = true;
         } else {
             cartSection.style.display = "block";
             checkoutForm.style.display = "none";
-            pageTitle.style.display = "block";
-            yourTitle.style.display = "none";
+            pageTitle.style.display = "none";
+            yourTitle.style.display = "block";
 
             checkoutBtn.textContent = "Proceed to Checkout";
             onCheckoutPage = false;
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
 
     confirmOrder.onclick = () => {
-        alert("ORDER SUCCESSFULLY RECEIVED!")
+        alert("ORDER RECEIVED!")
     }
         
     };

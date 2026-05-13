@@ -88,4 +88,11 @@
 }
 
 
+#cart-section {
+    text-align: center;
+    
+}
 
+#cart-section .button {
+    display: inline;
+}
