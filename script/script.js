@@ -13,6 +13,8 @@ function addToCart(item){
 }
 
 function displayCart(){
+
+    // get elements from localstorage and store them as elements in array
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     let cartlist = document.getElementById("cart-items");
@@ -22,7 +24,9 @@ function displayCart(){
 
     let subtotalElement = document.getElementById("subtotal");
 
+    
     cartlist.innerHTML = "";
+
     let subtotal = 0;
 
     if (cart.length == 0){
@@ -33,6 +37,7 @@ function displayCart(){
         cartSection.style.display = "block ";
     }
 
+    // Loop through each item
     cart.forEach((item, index) => {
 
         subtotal += item.price;
@@ -49,9 +54,11 @@ function displayCart(){
             </a>
         `;
 
+        // Create remove button
         let removeBtn = document.createElement("button");
         removeBtn.textContent = "Remove";
         removeBtn.onclick = () => removeItem(index);
+        
         li.appendChild(removeBtn);
         
         cartlist.appendChild(li);
@@ -64,28 +71,36 @@ function displayCart(){
 
 
 function removeItem(index){
+
+    // get elements from localstorage and store them as elements in array
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+    //remove elements with specific index
     cart.splice(index, 1);
+
+    //converts elements in js array back into json format
     localStorage.setItem("cart", JSON.stringify(cart));
     location.reload();
 
 }
 
 document.addEventListener("DOMContentLoaded", ()=> {
-    
+
+    // Initialise constant variables based on element id
     const checkoutBtn = document.getElementById("checkoutBtn");
     const cartSection = document.getElementById("cart-section");
     const checkoutForm = document.getElementById("checkout-form");
     const pageTitle = document.getElementById("page-title");
     const yourTitle = document.getElementById("your-order");
 
+    // Hide checkout page.
     pageTitle.style.display = "none";
     checkoutForm.style.display = "none";
 
     let onCheckoutPage = false;
 
     checkoutBtn.onclick = () => {
+        // If user is not on checkoutpage
         if (!onCheckoutPage){
             cartSection.style.display = "none";
             checkoutForm.style.display = "block";
@@ -94,6 +109,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
             checkoutBtn.textContent = "Go Back";
             onCheckoutPage = true;
+        // If user is on checkoutpage    
         } else {
             cartSection.style.display = "block";
             checkoutForm.style.display = "none";
