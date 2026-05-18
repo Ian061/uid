@@ -13,7 +13,7 @@
     display: flex;
     gap: 30px;
     list-style: none;
-    padding: 0;
+    padding: 10px;
     justify-content: center;
     font-family: Chonburi, sans-serif;
 }
@@ -65,7 +65,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 30%;
-    display:block;
+    
 }
 
 .top-image{
@@ -163,7 +163,8 @@
 .card{
     background-color: var(--accent-color);
      
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 100px;
 
     display: flex;
@@ -178,7 +179,7 @@
 .card-content{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
 }
 .card-image{
     width: 100px;
@@ -225,22 +226,36 @@ body {
 
 }
 
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.confirm-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
 
-@media screen and (max-width: 390px){
+@media (max-width: 390px){
+
+    body{
+        overflow-x:hidden;
+    }
+    
     .title{
         font-size: 30px;
-        text-align: center;
     }
     
     .navigationbar ul {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding : 0;
+        gap: 12px;
+        flex-wrap: wrap;
     }
+
     .hero {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -259,7 +274,7 @@ body {
 
     .overlay-text{
         position: absolute;
-        text-align: center;
+        text-align: flex-end;
         margin: 10px 0;
     }
     
@@ -270,15 +285,65 @@ body {
         gap: 20px;
 
     }
-    .featured-item-container{
-        width: 50%;
+
+    .navigationbar ul{
+        gap: 20px;
+    }
+
+    .h3-row {
         flex-direction: column;
-        text-align: center;
+        gap : 20px;
+        justify-content: center;
+        
+        align-items: center;
+        padding-top: 40px;
+    
     }
-    .featured-item-container img{
-        width: 100%;
+    .h3-row h3 {
+        flex-direction: column;  
+        
+    }
+
+    .card{
+        background-color: var(--accent-color);
         height: auto;
+        width: 50%;
+        max-width: 350px;
+        
+        
+        padding: 10px;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding-top: 20px;
+        border-radius: 10px;
+
+        text-decoration: none;
+        color: inherit;
     }
+
+    .card-content{
+        flex-direction: column;
+        align-items: center;
+        
+        gap: 0px;
+    }
+    .card h3{
+        color: white;
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+
+    .card-image{
+        width: 80%;
+        height: 130px;
+        border-radius: 4px;
+    }
+
     .orderbutton{
         width: 60%;
         font-size: 20px;

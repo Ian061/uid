@@ -48,16 +48,17 @@
 
     <div id ="checkout-form" style = "display: none;">
         
-
         <input type = "text" placeholder="FULL NAME" class = "input-field"><br>
         <input type = "text" placeholder="EMAIL" class = "input-field">
-        <input type = "text" placeholder="ADDRESS" class = "input-field">
+        <input type = "text" placeholder="DELIVERY ADDRESS" class = "input-field">
         <input type = "text" placeholder="PHONE NUMBER" class = "input-field">
 
-        <button id = "confirmOrder" class = "button headers font-white">
-            Confirm Order
+        <div class="confirm-wrapper">
+            <button id = "confirmOrder" class = "button headers font-white">
+                Confirm Order
+            </div>
         </button>
-
+        
     </div>
     <h1 class = "line"></h1>
 
@@ -75,7 +76,7 @@
     </section>
 </div>
 
-<script src = "../script/script.js" defer></script>
+<script src = "../script/script.js" ></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", displayCart);
