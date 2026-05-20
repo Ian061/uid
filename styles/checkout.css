@@ -1,11 +1,26 @@
 .input-field {
     width: 100%;
     padding: 12px 20px;
-    font-size: 18px;
+    font-size: 1.125rem;
     border-radius: 5px;
     margin-bottom: 20px;
     text-align: center;
+    overflow-x: hidden;
 }
+
+@media (max-width: 390px){
+    .input-field {
+        display: flex;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1.125rem;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        text-align: center;
+        overflow-x: hidden;
+    }
+}
+
 
 
 

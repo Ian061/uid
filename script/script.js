@@ -45,11 +45,13 @@ function displayCart(){
         li.className = "cart-item";
 
         li.innerHTML = `
-            <a href="${item.link}" class = "card">
+            <a href="${item.link}" class = "card card-cart">
                 <div class = "card-content font-white">
                     <img src="${item.image}" alt = "Menuimg" class = "card-image">
-                    <h3>${item.name}</h3>
-                    <p>$${item.price.toFixed(2)} </p>
+                    <div class= "item-info">
+                        <h3>${item.name}</h3>
+                        <p>$${item.price.toFixed(2)} </p>
+                    </div>
                 </div>
             </a>
         `;
