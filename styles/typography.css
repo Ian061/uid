@@ -1,6 +1,7 @@
 .title {
     font-family: Chonburi, sans-serif;
     font-weight: 600;
+    font-size: 40pt;
 }
 
 .headers {
@@ -101,4 +102,12 @@
 .item-info {
     display: flex;
     flex-direction: column;
+}
+
+
+@media (max-width: 390px){
+
+    .title{
+        font-size: 2rem;
+    }
 }

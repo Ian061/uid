@@ -1,11 +1,21 @@
 .input-field {
+
+    font-family: Chonburi, sans-serif;
+    font-weight: 600;
+    font-size: 40pt;
+
     width: 100%;
     padding: 12px 20px;
     font-size: 1.125rem;
     border-radius: 5px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: flex-start;
     overflow-x: hidden;
+}
+
+label{
+    font-family: Chonburi, sans-serif;
+    font-size: 20px;
 }
 
 @media (max-width: 390px){

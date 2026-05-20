@@ -5,18 +5,20 @@
 
 /* Classes used in index html page */
 .main-menu{
-    padding-top: 60px;
     background-color: #FDFAE2;
 }
 
 .navigationbar ul {
+    position: relative;
+    bottom: 40px;
     display: flex;
     font-size: 1.5625rem;
-    gap: 1.875rem;
+    gap: 1.5rem;
     list-style: none;
     padding: 10px;
     justify-content: center;
-    font-family: Chonburi, sans-serif;
+    font-family: Chonburi, sans-serif
+    
 }
 
 .center-text{
@@ -116,9 +118,11 @@
 }
 
 .top-bar{
+    position: relative;
     display: flex;
     justify-content: flex-end;
     padding: 20px;
+    top: 50px;
 }
 
 .orderbutton{
@@ -231,18 +235,21 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    cursor: pointer;
 }
 
 
 @media (max-width: 390px){
 
-    .title{
-        font-size: 1.875rem;
-    }
-    
     .navigationbar ul {
+        top: 20px;
         gap: 1.25rem;
         flex-wrap: wrap;
+    }
+
+    .orderbutton {
+        position: relative;
+        bottom: 30px;
     }
 
     .hero {
