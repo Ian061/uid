@@ -3,11 +3,11 @@
     font-size: 16px;
 }
 
+/* Classes used in index html page */
 .main-menu{
     padding-top: 60px;
     background-color: #FDFAE2;
 }
-
 
 .navigationbar ul {
     display: flex;
@@ -43,7 +43,8 @@
     height: 300px;
     max-height: 300px;
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 .left-img{
@@ -82,17 +83,13 @@
     display:block;
 }
 
-.top-image-philly{
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-}
-.top-image-philly img {
-    width : 100%;
-    height : 100%;
-    object-fit: cover;
-    object-position: 50%;
-    display:block;
+.overlay-text {
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    bottom: 10%;
+    left: 36%;
+    
 }
 
 .highlights{
@@ -107,20 +104,16 @@
     gap:2rem;
 }
 
-
-
-
-
-.overlay-text {
-    position: absolute;
-    color: white;
-    font-size: 1.5rem;
-    bottom: 10%;
-    left: 36%;
-    transform: none;
+.featured-item-container{
+    display: flex;
+    flex-direction: row;
+    gap : 1.25rem;
 }
-    
-    
+
+.featured-item-container img{
+    width: 150px;
+    border-radius: 10px;
+}
 
 .top-bar{
     display: flex;
@@ -136,15 +129,19 @@
     cursor: pointer;
     
 }
-.cart-space{
-    
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    gap: 75px; 
+.top-image-philly{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
 }
+.top-image-philly img {
+    width : 100%;
+    height : 100%;
+    object-fit: cover;
+}
+
+
 
 
 .line {
@@ -154,8 +151,6 @@
     background-color: black;
     
 }
-
-
 
 .card{
     background-color: var(--accent-color);
@@ -186,7 +181,7 @@
     object-fit: cover;
     border-radius: 4px;
     margin-left: 0.3125rem;
-    margin-right: 0.3125rem;
+    
 }
 
 .card h3{
@@ -214,27 +209,22 @@ body {
     cursor: pointer;
 }
 
-
-.featured-item-container{
+/* Classes used in Cart html page */
+.cart-space{
     display: flex;
-    flex-direction: row;
-    gap : 1.25rem;
-}
-
-.featured-item-container img{
-    width: 150px;
-    border-radius: 10px;
-
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
 }
 
 #cart-items {
     list-style: none;
     padding: 0;
+    
 }
 
 .cart-item img{
-    margin-right: 20px;
-    margin-left: 10px;
+    width: 6rem;
 }
 
 .confirm-wrapper {
@@ -244,10 +234,8 @@ body {
 }
 
 
-
 @media (max-width: 390px){
 
-    
     .title{
         font-size: 1.875rem;
     }
@@ -273,7 +261,6 @@ body {
     .center-img{
         display: block;
         width: 90%;
-        height: auto;
     }
 
     .overlay-text{
@@ -311,24 +298,12 @@ body {
 
     .h3-row {
         flex-direction: column;
-        gap : 20px;
-        justify-content: center;
-        
         align-items: center;
-        padding-top: 40px;
     
     }
     .h3-row h3 {
         flex-direction: column;  
         
-    }
-    .cart-space{
-    
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 75px; 
     }
 
     .card{
@@ -370,17 +345,22 @@ body {
         color: inherit;
     }
 
+    .cart-item img{
+        width: 10rem;
+    }
+    
+
     .card-content{
         display: flex;
         flex-direction: column;
         align-items: center;
         
-        gap: 0px;
+        gap: 20px;
     }
     .card h3{
         color: white;
         margin: 0;
-        font-size: 1rem;
+        font-size: 1.8rem;
         text-align: center;
         
     }
@@ -397,17 +377,8 @@ body {
     }
 
     .top-left-button img{
-        width: 80px;
-        height: auto;
-
+        width: 5rem;
     }
-
-
-    .cart-item img{
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    
 
 }
 
