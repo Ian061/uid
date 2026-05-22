@@ -1,9 +1,9 @@
 .input-field {
-
+    
     font-family: Chonburi, sans-serif;
     font-weight: 600;
     font-size: 40pt;
-
+    
     width: 100%;
     padding: 12px 20px;
     font-size: 1.125rem;
@@ -16,6 +16,7 @@
 label{
     font-family: Chonburi, sans-serif;
     font-size: 20px;
+    color: #436328;
 }
 
 @media (max-width: 390px){

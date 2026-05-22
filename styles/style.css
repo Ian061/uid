@@ -10,7 +10,7 @@
 
 .navigationbar ul {
     position: relative;
-    bottom: 40px;
+    bottom: 100px;
     display: flex;
     font-size: 1.5625rem;
     gap: 1.5rem;
@@ -33,6 +33,7 @@
     display: flex;
     align-items: center;
 }
+
 .hero{
     display: flex;
     justify-content: space-between;
@@ -45,6 +46,7 @@
     height: 300px;
     max-height: 300px;
     position: relative;
+    bottom: 90px;
     overflow-y: hidden;
     overflow-x: scroll;
 }
@@ -69,7 +71,6 @@
     left: 50%;
     transform: translateX(-50%);
     width: 30%;
-    
 }
 
 .top-image{
@@ -96,8 +97,10 @@
 
 .highlights{
     display: flex;
+    position: relative;
     flex-direction: column;
     background-color: var(--accent-color);
+    bottom: 10px;
     font-size: 10pt;
     width: 100%;
     max-width: 60rem;
@@ -125,14 +128,31 @@
     top: 50px;
 }
 
+  
 .orderbutton{
-    padding: 10px 20px;
+    display: flex;
+    position: relative;
+    bottom: 60px;
     background-color: green;
-    color: white;
-    border: none;
     cursor: pointer;
+
+    background-color: var(--accent-color);
     
+    width: 250px;
+    height: 40px;
+    color: white;
+
+    padding: 4px 10px;
+    border-radius: 10px;
+    
+    align-items: center;
+    justify-content: center;
+    
+    text-decoration: none;
 }
+
+
+  
 
 .top-image-philly{
     width: 100%;
@@ -144,9 +164,6 @@
     height : 100%;
     object-fit: cover;
 }
-
-
-
 
 .line {
     margin-top: 3.5rem;
@@ -247,12 +264,24 @@ body {
         flex-wrap: wrap;
     }
 
+    .top-bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    top: 50px;
+    }
+
+
     .orderbutton {
         position: relative;
         bottom: 30px;
+        padding: 0px, 0px;
     }
 
     .hero {
+        position: relative;
+        bottom: 0px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -378,10 +407,7 @@ body {
         border-radius: 4px;
     }
 
-    .orderbutton{
-        width: 60%;
-        font-size: 1.25rem;
-    }
+    
 
     .top-left-button img{
         width: 5rem;
