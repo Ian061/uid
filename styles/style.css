@@ -305,9 +305,14 @@ body {
 
 
     .orderbutton {
-        position: relative;
+        background-color: #96D363;
+        position: fixed;
         bottom: 30px;
-        padding: 0px, 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        
+        z-index: 9999;
     }
 
     .hero {
@@ -453,11 +458,14 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        
         gap: 10px; 
         overflow-x: hidden;
     }
     .confirm-wrapper{
-        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
 

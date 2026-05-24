@@ -16,11 +16,10 @@
 
 #checkout-form {
     transform: translateX(-50%);
+    
 }
 
-#confirmOrder{
-    align-self: center;
-}
+
 
 label{
     display: block;
@@ -54,7 +53,9 @@ label{
     }
     
     #confirmOrder{
-        width: auto;
+        display: flex;
+        justify-content: center;
+        width: 65%;
     }
     label{
         font-size: 25px;
