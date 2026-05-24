@@ -1,32 +1,63 @@
 .input-field {
-    
     font-family: Chonburi, sans-serif;
     font-weight: 600;
     font-size: 40pt;
-    
-    width: 100%;
+    width: 190%;
+
     padding: 12px 20px;
     font-size: 1.125rem;
     border-radius: 5px;
     margin-bottom: 20px;
+
     text-align: flex-start;
     overflow-x: hidden;
 }
 
-label{
-    font-family: Chonburi, sans-serif;
-    font-size: 20px;
-    color: #436328;
+
+#checkout-form {
+    transform: translateX(-50%);
 }
 
+#confirmOrder{
+    align-self: center;
+}
+
+label{
+    display: block;
+    font-family: Chonburi, sans-serif;
+    font-size: 25px;
+    color: #436328;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+
 @media (max-width: 390px){
-    .input-field {
-        display: flex;
+    #checkout-form{
+        transform: none;
         width: 100%;
-        padding: 12px 20px;
-        font-size: 1.125rem;
-        border-radius: 5px;
-        margin-bottom: 20px;
+        padding: 0 15px;
+        overflow-x: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-field{
+        width: 100%;
+        font-size: 1rem;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    #confirmOrder{
+        width: auto;
+    }
+    label{
+        font-size: 25px;
     }
 }
 

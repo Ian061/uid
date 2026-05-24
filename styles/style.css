@@ -2,7 +2,10 @@
     --accent-color: #436328;
     font-size: 16px;
 }
-
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 /* Classes used in index html page */
 .main-menu{
     background-color: #FDFAE2;
@@ -19,6 +22,18 @@
     justify-content: center;
     font-family: Chonburi, sans-serif
     
+}
+
+.navigationbarmenu ul {
+    position: relative;
+    bottom: 1px;
+    display: flex;
+    font-size: 1.5625rem;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 10px;
+    justify-content: center;
+    font-family: Chonburi, sans-serif
 }
 
 .center-text{
@@ -173,6 +188,13 @@
     
 }
 
+.linemenu {
+    margin-top: 2rem;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
 .card{
     background-color: var(--accent-color);
      
@@ -238,6 +260,8 @@ body {
     gap: 10px; 
 }
 
+
+
 #cart-items {
     list-style: none;
     padding: 0;
@@ -251,14 +275,21 @@ body {
 .confirm-wrapper {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 200%;
     cursor: pointer;
 }
 
 
 @media (max-width: 390px){
 
+    
     .navigationbar ul {
+        top: 20px;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    .navigationbarmenu ul {
         top: 20px;
         gap: 1.25rem;
         flex-wrap: wrap;
@@ -407,11 +438,26 @@ body {
         border-radius: 4px;
     }
 
-    
+    .top-left-button{
+        position: absolute;
+        top: 20px;
+        left: 5px;
+        display: block;
+    }
 
     .top-left-button img{
         width: 5rem;
     }
 
+    .cart-space{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+        overflow-x: hidden;
+    }
+    .confirm-wrapper{
+        align-self: flex-start;
+    }
 }
 
