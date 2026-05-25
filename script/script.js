@@ -130,6 +130,22 @@ document.addEventListener("DOMContentLoaded", ()=> {
     };
 });
 
+document.addEventListener("DOMContentLoaded", ()=> {
+    const form = document.getElementById("checkout-form");
+    const button = document.getElementById("confirmOrder");
+
+    form.addEventListener("input", () => {
+
+        if (form.checkValidity()){
+            button.disabled = false;
+        }
+        else {
+            button.disabled = true;
+        }
+    });
+});
+
+
 
 
 

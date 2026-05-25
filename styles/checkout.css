@@ -3,7 +3,7 @@
     font-weight: 600;
     font-size: 40pt;
     width: 190%;
-
+    
     padding: 12px 20px;
     font-size: 1.125rem;
     border-radius: 5px;
@@ -16,10 +16,12 @@
 
 #checkout-form {
     transform: translateX(-50%);
-    
 }
 
-
+#confirmOrder:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
 label{
     display: block;
@@ -37,26 +39,26 @@ label{
     #checkout-form{
         transform: none;
         width: 100%;
-        padding: 0 15px;
+        padding: 0 20px;
         overflow-x: hidden;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        box-sizing: border-box;
     }
 
     .input-field{
-        width: 100%;
+        width: calc(100% - 20px);
         font-size: 1rem;
+        
         box-sizing: border-box;
         overflow-x: hidden;
     }
+
     
     #confirmOrder{
         display: flex;
         justify-content: center;
         width: 65%;
     }
+    
     label{
         font-size: 25px;
     }

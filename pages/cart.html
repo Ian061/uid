@@ -15,11 +15,11 @@
 
 <body class="main">
 
-<h1 id = "your-order" class = "title font-brown center-text">
+<h1 id = "your-order" class = "text-title font-brown center-text">
     Your Order
 </h1>
 
-<h1 id = "page-title" class = "title font-brown center-text">
+<h1 id = "page-title" class = "text-title font-brown center-text">
     Checkout
 </h1>
 
@@ -32,35 +32,35 @@
     <h1 class="line"></h1>  
 
     <div id = "empty-cart-message">
-        <h2 class="subheaders font-brown">Your cart is empty!</h2>
-        <a href="menu.html" class = "button headers font-white">
+        <h2 class="text-subheaders font-brown">Your cart is empty!</h2>
+        <a href="menu.html" class = "button text-headers font-white">
             Add items
         </a>
     </div>
 
     <div id = "cart-section">
         <ul id ="cart-items" class = "center-text"></ul>
-        <a href="menu.html" class = "button headers font-white">
+        <a href="menu.html" class = "button text-headers font-white">
             Add  more items
         </a>
     </div>
     
 
     <form id ="checkout-form" style = "display: none;"  >
-        <label for="Name"> Name: </label>
-        <input type = "text" placeholder="Jane Doe" class = "input-field">
+        <label for="name"> Name: </label>
+        <input type = "text" placeholder="Jane Doe" class = "input-field" required>
 
         <label for="email">Email:</label>
-        <input name="email" type = "email" placeholder="jane@email.com" class = "input-field">
+        <input name="email" type = "email" placeholder="jane@email.com" class = "input-field" required>
 
         <label for = "Delivery Address">Delivery Address:</label>
-        <input type = "text" placeholder= "123, Cool Street, Melbourne" class = "input-field">
+        <input type = "text" placeholder= "123, Cool Street, Melbourne" class = "input-field" required>
 
         <label for = "Phone number">Phone Number:</label>
-        <input type = "number" placeholder="0123-456-789" class = "input-field">
+        <input type = "number" placeholder="0123-456-789" class = "input-field"required>
 
         <div class="confirm-wrapper">
-            <input type = "submit" value="Confirm Order" id = "confirmOrder" class = "button headers font-white"></input>
+            <input type = "submit" value="Confirm Order" id = "confirmOrder" class = "button text-headers font-white" disabled></input>
         </div>
         
     </form>
@@ -69,12 +69,12 @@
 </div>
 
 <div>
-    <h2 class=" subheaders font-brown right-end">
+    <h2 class=" text-subheaders font-brown right-end">
         Subtotal: $<span id = "subtotal">0.00</span>
     </h2>
 
     <section class = "cart-space">
-        <button id = "checkoutBtn" class = "button headers font-white center-text">
+        <button id = "checkoutBtn" class = "button text-headers font-white center-text">
             Proceed to Checkout
         </button>
     </section>

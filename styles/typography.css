@@ -1,38 +1,35 @@
-.title {
+.text-title {
     font-family: Chonburi, sans-serif;
     font-weight: 600;
     font-size: 40pt;
 }
 
-.headers {
+.text-headers {
     font-family: Chonburi, sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
 }
 
-.subheaders {
+.text-subheaders {
     font-family: Chonburi, sans-serif;
     font-weight: 400;
     font-size: 20pt;
 
 }
 
-.section-title {
+.text-section-title {
     font-family: Chonburi, sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-left: 30px;
 }
 
-
-
-.subheaders-menu{
+.text-subheaders-menu{
     font-family: Chonburi, sans-serif;
-    font-weight: 400;
-    font-size: 15pt;
+    font-size: 1.25rem;
 }
 
-.subtitle {
+.text-subtitle {
     font-family: "Comfortaa", sans-serif;
     font-weight: 300;
     font-size: 14pt;

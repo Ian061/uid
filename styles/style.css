@@ -101,6 +101,8 @@ html, body {
     display:block;
 }
 
+
+
 .overlay-text {
     position: absolute;
     color: white;
@@ -150,7 +152,7 @@ html, body {
     bottom: 60px;
     background-color: green;
     cursor: pointer;
-
+    
     background-color: var(--accent-color);
     
     width: 250px;
@@ -282,7 +284,6 @@ body {
 
 @media (max-width: 390px){
 
-    
     .navigationbar ul {
         top: 20px;
         gap: 1.25rem;
