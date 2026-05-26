@@ -135,10 +135,11 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const button = document.getElementById("confirmOrder");
 
     form.addEventListener("input", () => {
-
+        // Check if form is valid if not, enable button
         if (form.checkValidity()){
             button.disabled = false;
         }
+        // If form is invalid, disable button
         else {
             button.disabled = true;
         }

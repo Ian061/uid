@@ -74,17 +74,19 @@
 
 
 .button {
-    background-color: var(--accent-color);
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 250px;
     height: 80px;
-    color: white;
 
     padding: 10px 10px;
     border-radius: 10px;
 
-    align-items: center;
-    justify-content: center;
+    background-color: var(--accent-color);
+    color: white;
+
     cursor: pointer;
     text-decoration: none;
     
@@ -114,7 +116,7 @@
 
 @media (max-width: 390px){
 
-    .title{
+    .text-title{
         position: relative;
         left: 10px;
         top: 10px;

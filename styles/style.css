@@ -12,37 +12,43 @@ html, body {
 }
 
 .navigationbar ul {
-    position: relative;
-    bottom: 100px;
     display: flex;
-    font-size: 1.5625rem;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 10px;
     justify-content: center;
-    font-family: Chonburi, sans-serif
+    gap: 1.5rem;
+    
+    padding: 10px;
+    list-style: none;
+    bottom: 100px;
+
+    font-family: Chonburi, sans-serif;
+    font-size: 1.5625rem;
+    
+    position: relative;
     
 }
 
 .navigationbarmenu ul {
-    position: relative;
-    bottom: 1px;
     display: flex;
-    font-size: 1.5625rem;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 10px;
     justify-content: center;
-    font-family: Chonburi, sans-serif
+    gap: 1.5rem;
+
+    padding: 10px;
+    list-style: none;
+    bottom: 1px;
+
+    
+    
+    font-family: Chonburi, sans-serif;
+    font-size: 1.5625rem;
+    
+    position: relative;
+    
 }
 
 .center-text{
     text-align: center;
 }
 
-.right-end-text{
-    text-align: end;
-}
 
 .cart-container {
     display: flex;
@@ -60,8 +66,10 @@ html, body {
     max-width: 1000rem;
     height: 300px;
     max-height: 300px;
+
     position: relative;
     bottom: 90px;
+
     overflow-y: hidden;
     overflow-x: scroll;
 }
@@ -116,11 +124,14 @@ html, body {
     display: flex;
     position: relative;
     flex-direction: column;
+
     background-color: var(--accent-color);
+
     bottom: 10px;
     font-size: 10pt;
     width: 100%;
     max-width: 60rem;
+    
     margin:auto;
     padding: 1.875rem;
     gap:2rem;
@@ -170,7 +181,7 @@ html, body {
 
 
   
-
+/* Classes used  in product listing pages */
 .top-image-philly{
     width: 100%;
     height: 250px;
@@ -196,12 +207,12 @@ html, body {
     height: 2px;
     background-color: black;
 }
-
+/* Classes used in menus page */
 .card{
     background-color: var(--accent-color);
      
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     height: 100px;
     
     flex-direction: row;
@@ -218,6 +229,7 @@ html, body {
 
 .card-content{
     display: flex;
+    gap: 20px;
 }
 
 .card-image{
@@ -234,12 +246,17 @@ html, body {
     margin: 0px;
 }
 
+.card__title {
+    color: white;
+    margin: 0px;
+}
+
 .order{
     margin-top: 50px;
 }
 
 body {
-    margin: 0 ;
+    margin:0;
 }
 
 .top-left-button{
@@ -262,8 +279,6 @@ body {
     gap: 10px; 
 }
 
-
-
 #cart-items {
     list-style: none;
     padding: 0;
@@ -281,6 +296,10 @@ body {
     cursor: pointer;
 }
 
+.subtotal-text{
+    position: relative;
+    left: 40px;
+}
 
 @media (max-width: 390px){
 
@@ -297,11 +316,11 @@ body {
     }
 
     .top-bar{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 1px;
-    top: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 1px;
+        top: 50px;
     }
 
 
@@ -467,6 +486,11 @@ body {
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+
+    .subtotal-text{
+        position: relative;
+        left: 10px;
     }
 }
 
