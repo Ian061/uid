@@ -49,8 +49,15 @@ function displayCart(){
                 <div class = "card-content font-white">
                     <img src="${item.image}" alt = "Menuimg" class = "card-image">
                     <div class= "item-info">
-                        <h3>${item.name}</h3>
-                        <p>$${item.price.toFixed(2)} </p>
+
+                        <h3 class = "text-headers font-white">
+                            ${item.name}
+                        </h3>
+                        
+                        <p class = text-headers>
+                            $${item.price.toFixed(2)} 
+                        </p>
+
                     </div>
                 </div>
             </a>
