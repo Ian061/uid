@@ -59,6 +59,7 @@ function displayCart(){
         // Create remove button
         let removeBtn = document.createElement("button");
         removeBtn.textContent = "Remove";
+        removeBtn.classList.add("cart__remove-button");
         removeBtn.onclick = () => removeItem(index);
         
         li.appendChild(removeBtn);

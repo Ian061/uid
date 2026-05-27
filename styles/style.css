@@ -227,6 +227,7 @@ html, body {
    
 }
 
+
 .card-content{
     display: flex;
     gap: 20px;
@@ -276,12 +277,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; 
+    gap: 30px; 
 }
 
 #cart-items {
     list-style: none;
     padding: 0;
+    width: 100%;
     
 }
 
@@ -300,6 +302,28 @@ body {
     position: relative;
     left: 40px;
 }
+
+.cart__remove-button{
+    width: 100%;
+    display: block;
+    font-family: Chonburi, sans-serif;
+
+    background-color: #436328;
+    color: white;
+
+    
+    height: auto;
+    padding: 10px 10px;
+
+    cursor: pointer;
+}
+
+.cart-space_spacing{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 @media (max-width: 390px){
 
