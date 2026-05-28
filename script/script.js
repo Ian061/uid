@@ -45,7 +45,7 @@ function displayCart(){
         li.className = "cart-item";
 
         li.innerHTML = `
-            <a href="${item.link}" class = "card card-cart">
+            <a href="${item.link}?product=${item.id}" class = "card card-cart">
                 <div class = "card-content font-white">
                     <img src="${item.image}" alt = "Menuimg" class = "card-image">
                     <div class= "item-info">
@@ -153,6 +153,59 @@ document.addEventListener("DOMContentLoaded", ()=> {
         }
     });
 });
+
+const products = {
+    ricebowl: {
+        name: "Rice Bowl",
+        description: "Five or six choices of asian rice dish all with jasmine rice and crunchy greens - choose a second for extra yum!",
+        price: 15.00,
+        image: "../image-14.png",
+        link: "productpage.html",
+        extras: ["Extra bacon", "Extra rice"]
+    },
+
+    philly :{
+        name: "Philly Reuben",
+        description: "A philadelphia classic: pastrami, sauerkraut, pickles, edam, emmental, remoulade, wasabi-djion, sourdough.",
+        price: 15.00,
+        image: "../image-7.png",
+        link: "productpage.html",
+        extras: ["Extra bacon", "Extra rice"]
+    }
+};
+
+
+const params = new URLSearchParams(window.location.search);
+const productId = params.get("product");
+const product  = products[productId];
+
+if (product){
+    document.getElementById("product-image").src = product.image;
+    document.getElementById("product-name").textContent = product.name;
+    document.getElementById("product-description").textContent = product.description;
+    document.getElementById("product-price").textContent = "$" + product.price.toFixed(2);
+    
+
+    const extrasContainer = document.getElementById("product-extras");
+    product.extras.forEach(extra => {
+        const el = document.createElement("h3");
+        el.className = "text-subtitle spacing";
+        el.textContent = extra;
+        extrasContainer.appendChild(el);
+    });
+
+
+    document.getElementById("add-to-cart-btn").onclick = () => addToCart({
+        name: product.name,
+        price: product.price,
+        image: product.image,
+        link: product.link,
+        id: productId 
+  });
+} 
+
+
+
 
 
 
