@@ -67,9 +67,10 @@ label{
 
     
     #confirmOrder{
+        font-size: 20px;
         display: flex;
         justify-content: center;
-        width: 65%;
+        width: 170%;
     }
 
 
@@ -83,6 +84,10 @@ label{
     
     label{
         font-size: 25px;
+    }
+
+    .cart__remove-button{
+        width: 240px;
     }
 }
 
