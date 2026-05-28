@@ -108,46 +108,50 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const confirmOrder = document.getElementById("confirmOrder");
     const paymentInfo = document.getElementById("payment-info");
 
-    // Hide checkout page.
-    pageTitle.style.display = "none";
-    checkoutForm.style.display = "none";
-    paymentInfo.style.display = "none";
+    let currentPage = "cart";
 
-    let onCheckoutPage = false;
+    const showPage = (page) =>{
+        cartSection.style.display = "none";
+        checkoutForm.style.display = "none";
+        paymentInfo.style.display = "none";
+        pageTitle.style.display = "none";
+        yourTitle.style.display = "none";
+
+        if (page === "cart"){
+            cartSection.style.display = "block";
+            yourTitle.style.display = "block";
+            checkoutBtn.textContent = "Proceed to Checkout";
+        } else if (page === "checkout"){
+            checkoutForm.style.display = "block";
+            pageTitle.style.display    = "block";
+            checkoutBtn.textContent    = "Go Back";
+        } else if (page === "payment"){
+            paymentInfo.style.display = "block";
+            pageTitle.style.display    = "block";
+            checkoutBtn.textContent    = "Go Back";
+
+    }
+
+    currentPage = page;
+    };
+
+    showPage("cart");
 
     checkoutBtn.onclick = () => {
         // If user is not on checkoutpage
-        if (!onCheckoutPage){
-            cartSection.style.display = "none";
-            checkoutForm.style.display = "block";
-
-            pageTitle.style.display = "block";
-            yourTitle.style.display = "none";
-
-            checkoutBtn.textContent = "Go Back";
-            onCheckoutPage = true;
-        // If user is on checkoutpage    
-        } else {
-            cartSection.style.display = "block";
-            checkoutForm.style.display = "none";
-            
-            pageTitle.style.display = "none";
-            yourTitle.style.display = "block";
-        
-
-            checkoutBtn.textContent = "Proceed to Checkout";
-            onCheckoutPage = false;
-
+        if (currentPage == "cart"){
+            showPage("checkout");
+        } else if (currentPage === "checkout"){
+            showPage("cart");
+        } else if(currentPage ==="payment"){
+            showPage("checkout")
         }
     };
 
     confirmOrder.onclick = () => {
-
-        checkoutForm.style.display = "none";
-        paymentInfo.style.display = "block";
-        paymentButton.style.display = "block";
+        showPage("payment");
+        
     };
-
     paymentButton.onclick = () => {
         alert("ORDER RECEIVED!")
     };
@@ -156,6 +160,24 @@ document.addEventListener("DOMContentLoaded", ()=> {
 document.addEventListener("DOMContentLoaded", ()=> {
     const form = document.getElementById("checkout-form");
     const button = document.getElementById("confirmOrder");
+    button.disabled = true;
+    form.addEventListener("input", () => {
+        // Check if form is valid if not, enable button
+        if (form.checkValidity()){
+            button.disabled = false;
+        }
+        // If form is invalid, disable button
+        else {
+            button.disabled = true;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", ()=> {
+
+    const form = document.getElementById("payment-info");
+    const button = document.getElementById("paymentButton");
+
     button.disabled = true;
     form.addEventListener("input", () => {
         // Check if form is valid if not, enable button

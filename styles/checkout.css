@@ -28,6 +28,11 @@
     cursor: not-allowed;
 }
 
+#paymentButton:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 label{
     display: block;
 
