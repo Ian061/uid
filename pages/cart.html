@@ -57,12 +57,39 @@
         <input type = "text" placeholder= "123, Cool Street, Melbourne" class = "input-field" required>
 
         <label for = "Phone number">Phone Number:</label>
-        <input type = "number" placeholder="0123-456-789" class = "input-field"required>
+        <input type = "tel" placeholder="0123-456-789" class = "input-field"required>
 
         <div class="confirm-wrapper">
-            <input type = "submit" value="Confirm Order" id = "confirmOrder" class = "button text-headers font-white" disabled></input>
+            <input type = "button" value="Proceed to payment details" id = "confirmOrder" class = "button text-headers font-white" ></input>
         </div>
-        
+    </form>
+
+    <form id="payment-info" style="display: none;">
+
+        <label>Name on card:</label>
+        <input type="text" placeholder="Jane Doe" class="input-field">
+
+        <label>Card Number:</label>
+        <input type="text" placeholder="1234 5678 9012 3456" class="input-field">
+
+        <label>CVV:</label>
+        <input type="tel" placeholder="123" class="input-field">
+
+        <label>Expiry Date:</label>
+        <input type="text" placeholder="MM/YY" class="input-field">
+
+        <label>Billing Address:</label>
+        <input type="text" placeholder="123, Cool Street, Melbourne" class="input-field">
+
+        <label>State:</label>
+        <input type="text" placeholder="VIC" class="input-field">
+
+        <label>Postcode:</label>
+        <input type="text" placeholder="3000" class="input-field">
+
+        <div class="confirm-wrapper">
+            <input type = "button" value="Confirm Order" id = "paymentButton" class = "button text-headers font-white"></input>
+        </div>
     </form>
     <h1 class = "line"></h1>
 
