@@ -48,7 +48,7 @@ label{
 
 
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     #checkout-form{
         transform: none;
         width: 100%;
@@ -59,7 +59,7 @@ label{
 
     .input-field{
         width: 100%;
-        font-size: clamp(0.85rem, 2.5vw, 1rem);
+        font-size: clamp(0.4rem, 2.5vw, 1rem);
         
         box-sizing: border-box;
         overflow-x: hidden;
@@ -83,7 +83,7 @@ label{
     }
     
     label{
-        font-size: clamp(20px, 3.5vw, 25px);
+        font-size: clamp(16px, 3.5vw, 25px);
     }
 
     .cart__remove-button{
