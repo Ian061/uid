@@ -118,13 +118,13 @@
 }
 
 
-@media (max-width: 390px){
+@media (max-width: 768px){
 
     .text-title{
         position: relative;
         left: 10px;
         top: 10px;
-        font-size: 2.1rem;
+        font-size: clamp(1.9rem, 5vw, 2.1rem);
         
     }
 
@@ -132,7 +132,7 @@
         background-color: var(--accent-color);
         display: flex;
         width: 90%;
-        height: 80px;
+        height: clamp(55px, 10vw, 80px);
 
         padding: 0px, 0px;
     }

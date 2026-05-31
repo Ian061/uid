@@ -48,7 +48,7 @@ label{
 
 
 
-@media (max-width: 390px){
+@media (max-width: 768px){
     #checkout-form{
         transform: none;
         width: 100%;
@@ -58,8 +58,8 @@ label{
     }
 
     .input-field{
-        width: calc(100% - 20px);
-        font-size: 1rem;
+        width: 100%;
+        font-size: clamp(0.85rem, 2.5vw, 1rem);
         
         box-sizing: border-box;
         overflow-x: hidden;
@@ -67,10 +67,10 @@ label{
 
     
     #confirmOrder{
-        font-size: 20px;
+        font-size: clamp(14px, 4vw, 20px);
         display: flex;
         justify-content: center;
-        width: 170%;
+        width: 100%;
     }
 
 
@@ -83,11 +83,11 @@ label{
     }
     
     label{
-        font-size: 25px;
+        font-size: clamp(20px, 3.5vw, 25px);
     }
 
     .cart__remove-button{
-        width: 240px;
+        width: clamp(160px, 60vw, 240px);
     }
 }
 
