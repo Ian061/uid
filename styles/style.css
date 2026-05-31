@@ -6,8 +6,13 @@ html, body {
     overflow-x: hidden;
     width: 100%;
 }
+
+.main {
+    background-color: #FDFAE2;
+}
 /* Classes used in index html page */
 .main-menu{
+    padding-top: 20px;
     background-color: #FDFAE2;
 }
 
@@ -175,8 +180,8 @@ html, body {
     
     align-items: center;
     justify-content: center;
-    
     text-decoration: none;
+    z-index: 100;
 }
 
 
@@ -321,6 +326,10 @@ body {
 
 .card-cart{
     padding: 20px 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 390px){
