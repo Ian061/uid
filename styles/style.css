@@ -70,7 +70,7 @@ html, body {
     width: 100%;
     max-width: 1000rem;
     height: 300px;
-    max-height: 300px;
+    max-height: 400px;
 
     position: relative;
     bottom: 90px;
@@ -84,7 +84,6 @@ html, body {
     left: 10%;
     transform: translateX(-50%);
     width: 30%;
-    max-width: 100;
 }
 
 .right-img{
@@ -332,6 +331,7 @@ body {
     display: none;
 }
 
+/* Media queries to adapt to mobile screen size*/
 @media (max-width: 1280px){
 
     .navigationbar ul {
@@ -491,6 +491,7 @@ body {
 
     .top-left-button img{
         width: 5rem;
+        z-index: 9999;
     }
 
     .cart-space{

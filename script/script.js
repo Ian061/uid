@@ -1,6 +1,4 @@
-function Clicked(){
-    alert("Clicked Button")
-}
+
 
 function addToCart(item){
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -12,9 +10,13 @@ function addToCart(item){
     window.location.href = "cart.html";
 }
 
+/* Function that displays cart items
+   and display empty cart message if 
+   cart is empty
+*/
 function displayCart(){
 
-    // get elements from localstorage and store them as elements in array
+    // Get elements from localstorage and store them as elements in array
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     let cartlist = document.getElementById("cart-items");
